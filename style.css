@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+:root{
+    --font-family: "Rakkas", sans-serif;
+    --primary-color: #6C0345; 
+    --bg-color: #DC6B19;
+}
+/* ****************/
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: var(--font-family);
+}
+h1{
+    font-size: 100px;
+}
+h2{
+    font-size: 60px;
+}
+h3{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.mensagem{
+    font-size: 25px;
+    margin-top: 40px;
+}
+.box{
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    font-size: 80px;
+    padding: 10px;
+    margin: 20px;
+}
+.btn-jogar {
+    padding: 10px 22px;
+    color: #c3c3c3;
+    border: 0;
+    background: var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: var(--font-family);
+    margin-top: 20px;
+    cursor: pointer; /* Adicione esta linha para melhorar a usabilidade */
+}
+  
+
+
+
