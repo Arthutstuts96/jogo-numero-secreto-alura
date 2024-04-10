@@ -9,6 +9,14 @@ recognition.addEventListener('end', () => recognition.start());
 /*----------------*/
 function onSpeak(e){
     var chute = e.results[0][0].transcript;
+    if(chute == "game over"){
+        document.body.innerHTML = `
+            <h2>Fim de jogo.</h2>
+            <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
+        `;
+        document.body.style.backgroundColor = 'black';
+        return;
+    }
     exibeChuteNaTela(chute);
     verificaSeChuteEValido(chute);
 }
